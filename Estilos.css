@@ -1,0 +1,99 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --green:#c3c82c;
+}
+
+.dark-theme {
+    --bg-color: black;
+    --text-color: white;
+    --blue:#2939ff;
+}
+body {
+    width: 100%;
+    min-height: 1vh;
+    padding-top: 1px;
+    display: grid;
+    place-items:initial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background ease 0.3s;    
+}
+.toggle {
+    margin: 5px 0;
+    position: absolute;
+    left: 93%;
+}
+.toggle input {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: -1;
+}
+.toggle label {
+    display: block;
+    width: 70px;
+    height: 30px;
+    background-color: var(--bg-color);
+    background: url('https://i.ibb.co/ZWmbGbj/etmfdr.gif');
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0, 30), 0 15px 12px rgba(0, 0, 0, 0, 22);
+}
+.toggle__ball {
+    width: 30px;
+    height: 100%;
+    background-color: var(--bg-color);
+    background: radial-gradient(var(--green), transparent);
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px #b4c1c5;
+    transition: transform ease 0.3s;
+}
+.toggle input:checked + label {
+    background-color: #dcdddf;
+    background: url('https://i.pinimg.com/originals/94/ff/74/94ff7463a1574221ba6d4ada2c997e0b.gif');
+    box-shadow: 0px 1px 4px #868686;
+    background-size: cover;
+    background-position: center;
+}
+.toggle input:checked +label .toggle__ball {
+    background: radial-gradient(var(--blue), transparent);
+    transform: translateX(40px);
+}
+.redonda{
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    border-radius: 35px;
+}
+h1 {
+    font-family: cursive;
+    text-align: center;
+}
+h4 {
+    font-family: cursive;
+    text-align: center;
+}
+.Image {
+    width: 200px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.compu {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(200px);
+}
+.present {
+    transform: translateY(200px);
+}   
+P {
+    text-align: center;
+    transform: translateY(205px);
+    font-family:cursive;
+    margin: 0 auto;
+}
