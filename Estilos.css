@@ -13,7 +13,7 @@ body {
     width: 100%;
     min-height: 1vh;
     padding-top: 1px;
-    display: grid;
+    display:grid;
     place-items:initial;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -98,8 +98,7 @@ P {
     margin: 0 auto;
 }
 .Saludando {
-    margin: 0 auto;
-    transform: translateX(590px);
+    position: relative;
     border-radius: 20px;
     width: 80px;
     height: 40px;
